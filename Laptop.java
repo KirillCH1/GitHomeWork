@@ -8,5 +8,13 @@ public class Laptop {
 
 
 
+    public Laptop(String brand, int  ram, int hdd , String os, String colors){
+        this.brand = brand;
+        this.ram = ram;
+        this.hdd = hdd;
+        this.os = os;
+        this.colors = colors;
+    }
+
 
 }
