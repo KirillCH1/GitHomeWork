@@ -23,28 +23,6 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        List<List> parameters = creator();
-        List<Laptop> lap1 = lapGenerator(20, parameters);
-        Laptop lap2 = filter(parameters);
-        List<Laptop> suitable = new ArrayList<>();
-        for (int i = 0; i < lap1.size() ; i ++ ){
-            if(lap2.equals(lap1.get(i))) {
-                suitable.add(lap1.get(i));
-
-            }
-        }
-        if(!(suitable == null))
-            for (int i = 0; i < suitable.size() ; i ++ ){
-                suitable.get(i).printDescription();
-            }
-        else
-            System.out.println("Подходящих вариантов нет");
-        System.out.println("************************************************");
-        for (int i = 0; i < lap1.size() ; i ++ ){
-            lap1.get(i).printDescription();
-            System.out.println("************************************************");
-        }
-
 
     }
 
